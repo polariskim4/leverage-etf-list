@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>ETF AUM Dashboard</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; background: #f0f2f5; padding: 20px; }
+        .card { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #1a73e8; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { background: #1a73e8; color: white; padding: 12px; }
+        td { padding: 12px; border-bottom: 1px solid #eee; }
+        .aum { font-weight: bold; color: #d93025; }
+        .ticker { background: #e8f0fe; padding: 3px 8px; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>📊 레버리지 ETF AUM 순위 ($10MM+)</h1>
+        <p id="update-time" style="text-align:right; font-size: 0.8em; color: #666;"></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>순위</th>
+                    <th>티커</th>
+                    <th>종목명 (설명)</th>
+                    <th>AUM ($MM)</th>
+                </tr>
+            </thead>
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+
+    <script>
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('list');
+                data.forEach((item, index) => {
+                    const row = `<tr>
+                        <td>${index + 1}</td>
+                        <td><span class="ticker">${item.ticker}</span></td>
+                        <td>${item.display_name}</td>
+                        <td class="aum">$${item.aum.toLocaleString()}</td>
+                    </tr>`;
+                    list.innerHTML += row;
+                });
+                document.getElementById('update-time').innerText = "최종 갱신: " + new Date().toLocaleString();
+            });
+    </script>
+</body>
+</html>
