@@ -1,0 +1,12 @@
+[
+    {
+        "ticker": "TQQQ",
+        "display_name": "ProShares UltraPro QQQ (나스닥100 3배) - 점검중",
+        "aum": 25000.0
+    },
+    {
+        "ticker": "SOXL",
+        "display_name": "Direxion Semiconductor Bull 3X (반도체 3배) - 점검중",
+        "aum": 12000.0
+    }
+]
