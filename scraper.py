@@ -2,56 +2,62 @@ import yfinance as yf
 import json
 import time
 import requests
+import re
 
-def get_leveraged_etf_list():
-    """레버리지 ETF 후보군을 넓게 탐색합니다."""
-    # 대표적인 레버리지 운용사 및 키워드 기반 확장 리스트
-    # 실제 '모든' 종목을 API 없이 찾기 위해 가장 점유율이 높은 티커들과 
-    # 레버리지 ETF 전문 운용사(ProShares, Direxion 등)의 주요 종목을 포함합니다.
-    base_tickers = [
-        "TQQQ", "SQQQ", "SOXL", "SOXS", "UPRO", "SPXU", "FNGU", "FNGD", "TNA", "TZA",
-        "BULZ", "BERZ", "LABU", "LABD", "YINN", "YANG", "TECL", "TECS", "BITO", "USD",
-        "QLD", "QID", "SSO", "SDS", "UWM", "TWM", "DIG", "DUG", "UYG", "SKF",
-        "FAS", "FAZ", "ERX", "ERY", "GUSH", "DRIP", "DFEN", "NUGT", "DUST", "CURE",
-        "TECS", "TECL", "SCO", "UCO", "BOIL", "KOLD", "SVXY", "UVXY", "YCL", "YCS"
-    ]
+def get_all_leveraged_tickers():
+    """스크리너를 통해 현재 시장의 모든 레버리지 ETF 티커를 먼저 가져옵니다."""
+    print("🌐 실시간 레버리지 ETF 목록 탐색 중...")
+    headers = {'User-Agent': 'Mozilla/5.0'}
+    # 레버리지 ETF들만 모아놓은 스크리너 페이지 (예시: StockAnalysis 또는 유사 사이트)
+    # 직접적인 API가 없으므로, 안정적인 쿼리 방식을 사용합니다.
+    url = "https://api.stockanalysis.com/wp-json/sa/get_stock_list?type=etf&asset_class=Leveraged"
     
-    # 팁: 야후 파이낸스에서 'Leveraged' 카테고리를 직접 긁어오는 것은 차단 위험이 커서
-    # 신뢰도 높은 광범위 리스트를 순회하며 AUM 필터링을 거치는 것이 가장 안정적입니다.
+    try:
+        response = requests.get(url, headers=headers, timeout=15)
+        data = response.json()
+        # API에서 제공하는 전체 리스트에서 티커만 추출
+        tickers = [item['s'] for item in data['data']]
+        print(f"🔎 시장에서 {len(tickers)}개의 레버리지 종목을 발견했습니다.")
+        return tickers
+    except Exception as e:
+        print(f"⚠️ 자동 탐색 실패, 비상용 리스트로 전환합니다: {e}")
+        # 실패 시에만 보험용으로 주요 티커 사용
+        return ["TQQQ", "SQQQ", "SOXL", "SOXS", "TSLL", "NVDL", "SPXL", "UPRO"]
+
+def update_etf_rankings():
+    # 1. 로봇이 스스로 명단 작성
+    all_tickers = get_all_leveraged_tickers()
     
     final_data = []
-    print(f"📡 시장 데이터 분석 및 $10MM 이상 종목 필터링 시작...")
-
-    for ticker in base_tickers:
+    
+    # 2. 각 티커별 상세 정보(AUM) 수집
+    for ticker in all_tickers:
         try:
             etf = yf.Ticker(ticker)
             info = etf.info
             
-            # AUM 정보 정밀 추출 (totalAssets -> navPrice * share -> marketCap 순서)
+            # AUM 정확도 확보
             aum = info.get('totalAssets') or info.get('marketCap')
             
-            # AUM이 $10,000,000 (10MM) 이상인 것만 선별
-            if aum and aum >= 10_000_000:
-                name = info.get('longName', ticker)
-                # 'Leveraged', 'Bull', 'Bear', '2x', '3x' 등 키워드 확인 (선택 사항)
-                
+            if aum and aum >= 10_000_000: # $10MM 이상 필터링
                 final_data.append({
                     "ticker": ticker,
-                    "display_name": name,
-                    "aum": round(aum / 1_000_000, 2) # Million 달러 단위
+                    "display_name": info.get('longName', ticker),
+                    "aum": round(aum / 1_000_000, 2)
                 })
-                print(f"✅ {ticker} ($ {round(aum/1_000_000, 1)} MM) 추가")
+                print(f"✅ 수집: {ticker}")
             
-            time.sleep(0.3)
-        except Exception as e:
+            time.sleep(0.1) # 밴 방지
+        except:
             continue
 
-    # AUM 기준 내림차순 정렬
+    # 3. 정렬 및 저장
     final_data = sorted(final_data, key=lambda x: x['aum'], reverse=True)
 
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(final_data, f, ensure_ascii=False, indent=4)
-    print(f"🎉 총 {len(final_data)}개의 레버리지 ETF 데이터 갱신 완료!")
+    
+    print(f"✨ 업데이트 완료: 총 {len(final_data)}개 종목")
 
 if __name__ == "__main__":
-    get_leveraged_etf_list()
+    update_etf_rankings()
