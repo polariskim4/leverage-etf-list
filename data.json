@@ -215,6 +215,16 @@
         "aum": 450.28
     },
     {
+        "ticker": "FNGS",
+        "display_name": "MicroSectors FANG+ ETN",
+        "aum": 447.44
+    },
+    {
+        "ticker": "FNGO",
+        "display_name": "MicroSectors FANG+ Index 2X Leveraged ETN",
+        "aum": 436.65
+    },
+    {
         "ticker": "DDM",
         "display_name": "ProShares Ultra Dow30",
         "aum": 434.67
@@ -1065,13 +1075,13 @@
         "aum": 22.26
     },
     {
-        "ticker": "SEF",
-        "display_name": "ProShares Short Financials",
+        "ticker": "SSG",
+        "display_name": "ProShares UltraShort Semiconductors",
         "aum": 21.06
     },
     {
-        "ticker": "SSG",
-        "display_name": "ProShares UltraShort Semiconductors",
+        "ticker": "SEF",
+        "display_name": "ProShares Short Financials",
         "aum": 21.06
     },
     {
