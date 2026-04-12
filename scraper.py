@@ -3,7 +3,6 @@ import json
 import time
 
 def get_etf_data():
-    # 수집할 주요 레버리지 ETF들 (리스트를 대폭 늘렸습니다)
     tickers = [
         "TQQQ", "SQQQ", "SOXL", "SOXS", "UPRO", "SPXU", "FNGU", "FNGD", 
         "TNA", "TZA", "BULZ", "BERZ", "LABU", "LABD", "YINN", "YANG",
@@ -17,26 +16,27 @@ def get_etf_data():
     for ticker in tickers:
         try:
             etf = yf.Ticker(ticker)
-            # 자산 규모(AUM) 대용으로 시가총액 데이터를 사용합니다.
-            info = etf.fast_info
-            aum = info.get('market_cap', 0) 
+            # 가장 안전한 기본 info 사용
+            data = etf.info
             
-            # 종목명 가져오기
-            full_name = etf.info.get('longName', f"{ticker} Leverage ETF")
+            # 자산 규모(AUM) 또는 시가총액 가져오기
+            aum = data.get('totalAssets') or data.get('marketCap') or data.get('navPrice', 0)
+            name = data.get('longName', ticker)
             
-            if aum > 0:
-                results.append({
-                    "ticker": ticker,
-                    "display_name": full_name,
-                    "aum": round(aum / 1_000_000, 2) # Million($) 단위
-                })
-                print(f"✅ {ticker} 완료")
+            # 데이터가 있으면 일단 저장
+            results.append({
+                "ticker": ticker,
+                "display_name": name,
+                "aum": round(aum / 1_000_000, 2) if aum else 0
+            })
+            print(f"✅ {ticker} 수집 성공")
             
-            time.sleep(0.2) # 과부하 방지
-        except:
+            time.sleep(0.5) 
+        except Exception as e:
+            print(f"❌ {ticker} 실패: {e}")
             continue
 
-    # AUM이 큰 순서대로 정렬
+    # AUM 순서로 정렬 (데이터가 없는 건 뒤로)
     results = sorted(results, key=lambda x: x['aum'], reverse=True)
 
     with open('data.json', 'w', encoding='utf-8') as f:
