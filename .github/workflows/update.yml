@@ -2,8 +2,8 @@ name: Daily ETF Data Update
 
 on:
   schedule:
-    - cron: '0 21 * * *'  # 매일 한국시간 오전 6시 자동 실행
-  workflow_dispatch:      # 수동 실행 가능
+    - cron: '0 21 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,7 +17,8 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install pandas requests
+        # yfinance라는 강력한 금융 라이브러리를 추가합니다.
+        run: pip install pandas requests yfinance
 
       - name: Run Scraper
         run: python scraper.py
