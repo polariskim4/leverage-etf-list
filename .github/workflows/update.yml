@@ -2,8 +2,8 @@ name: Daily ETF Data Update
 
 on:
   schedule:
-    - cron: '0 21 * * *'
-  workflow_dispatch:
+    - cron: '0 21 * * *'  # 매일 한국시간 오전 6시 자동 실행
+  workflow_dispatch:      # 수동 실행 가능
 
 jobs:
   build:
@@ -17,9 +17,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        # cloudscraper가 추가되었습니다!
-        run: |
-          pip install pandas requests lxml html5lib cloudscraper
+        run: pip install pandas requests
 
       - name: Run Scraper
         run: python scraper.py
@@ -29,5 +27,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add data.json
-          git commit -m "Update ETF data" || exit 0
+          git commit -m "Update leveraged ETF rankings automatically" || exit 0
           git push
