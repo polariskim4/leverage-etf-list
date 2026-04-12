@@ -10,14 +10,14 @@
         "aum": 12233.68
     },
     {
-        "ticker": "QLD",
-        "display_name": "ProShares Ultra QQQ",
-        "aum": 8352.05
+        "ticker": "SPXL",
+        "display_name": "Direxion Daily S&P500 Bull 3X Shares",
+        "aum": 4645.15
     },
     {
-        "ticker": "SSO",
-        "display_name": "ProShares Ultra S&P500",
-        "aum": 5412.69
+        "ticker": "TSLL",
+        "display_name": "Direxion Daily TSLA Bull 2X Shares",
+        "aum": 4450.78
     },
     {
         "ticker": "UPRO",
@@ -25,14 +25,9 @@
         "aum": 3965.08
     },
     {
-        "ticker": "TECL",
-        "display_name": "Direxion Daily Technology Bull 3X Shares",
-        "aum": 2977.22
-    },
-    {
-        "ticker": "TECL",
-        "display_name": "Direxion Daily Technology Bull 3X Shares",
-        "aum": 2977.22
+        "ticker": "NVDL",
+        "display_name": "GraniteShares 2x Long NVDA Daily ETF",
+        "aum": 3729.81
     },
     {
         "ticker": "SQQQ",
@@ -40,208 +35,8 @@
         "aum": 2561.36
     },
     {
-        "ticker": "FAS",
-        "display_name": "Direxion Daily Financial Bull 3X Shares",
-        "aum": 1939.1
-    },
-    {
-        "ticker": "BITO",
-        "display_name": "ProShares Bitcoin ETF",
-        "aum": 1742.49
-    },
-    {
-        "ticker": "BULZ",
-        "display_name": "MicroSectors Solactive FANG Innovation 3X Leveraged ETNs",
-        "aum": 1496.54
-    },
-    {
-        "ticker": "USD",
-        "display_name": "ProShares Ultra Semiconductors",
-        "aum": 1484.95
-    },
-    {
-        "ticker": "TNA",
-        "display_name": "Direxion Daily Small Cap Bull 3X Shares",
-        "aum": 1379.49
-    },
-    {
-        "ticker": "NUGT",
-        "display_name": "Direxion Daily Gold Miners Index Bull 2X Shares",
-        "aum": 1139.2
-    },
-    {
-        "ticker": "SCO",
-        "display_name": "ProShares UltraShort Bloomberg Crude Oil",
-        "aum": 970.32
-    },
-    {
         "ticker": "SOXS",
         "display_name": "Direxion Daily Semiconductor Bear 3X Shares",
         "aum": 855.73
-    },
-    {
-        "ticker": "YINN",
-        "display_name": "Direxion Daily FTSE China Bull 3X Shares",
-        "aum": 728.58
-    },
-    {
-        "ticker": "UYG",
-        "display_name": "ProShares Ultra Financials",
-        "aum": 646.33
-    },
-    {
-        "ticker": "UCO",
-        "display_name": "ProShares Ultra Bloomberg Crude Oil",
-        "aum": 622.31
-    },
-    {
-        "ticker": "LABU",
-        "display_name": "Direxion Daily S&P Biotech Bull 3X Shares",
-        "aum": 561.0
-    },
-    {
-        "ticker": "SDS",
-        "display_name": "ProShares UltraShort S&P500",
-        "aum": 538.51
-    },
-    {
-        "ticker": "SPXU",
-        "display_name": "ProShares UltraPro Short S&P500",
-        "aum": 495.02
-    },
-    {
-        "ticker": "BOIL",
-        "display_name": "ProShares Ultra Bloomberg Natural Gas",
-        "aum": 399.48
-    },
-    {
-        "ticker": "GUSH",
-        "display_name": "Direxion Daily S&P Oil & Gas Exp. & Prod. Bull 2X Shares",
-        "aum": 396.36
-    },
-    {
-        "ticker": "DFEN",
-        "display_name": "Direxion Daily Aerospace & Defense Bull 3X Shares",
-        "aum": 378.64
-    },
-    {
-        "ticker": "ERX",
-        "display_name": "Direxion Daily Energy Bull 2X Shares",
-        "aum": 341.82
-    },
-    {
-        "ticker": "QID",
-        "display_name": "ProShares UltraShort QQQ",
-        "aum": 315.78
-    },
-    {
-        "ticker": "UVXY",
-        "display_name": "ProShares Ultra VIX Short-Term Futures ETF",
-        "aum": 290.08
-    },
-    {
-        "ticker": "TZA",
-        "display_name": "Direxion Daily Small Cap Bear 3X Shares",
-        "aum": 265.48
-    },
-    {
-        "ticker": "UWM",
-        "display_name": "ProShares Ultra Russell2000",
-        "aum": 216.98
-    },
-    {
-        "ticker": "KOLD",
-        "display_name": "ProShares UltraShort Bloomberg Natural Gas",
-        "aum": 206.83
-    },
-    {
-        "ticker": "SVXY",
-        "display_name": "ProShares Short VIX Short-Term Futures ETF",
-        "aum": 183.98
-    },
-    {
-        "ticker": "FAZ",
-        "display_name": "Direxion Daily Financial Bear 3X Shares",
-        "aum": 140.83
-    },
-    {
-        "ticker": "CURE",
-        "display_name": "Direxion Daily Healthcare Bull 3X Shares",
-        "aum": 128.46
-    },
-    {
-        "ticker": "FNGD",
-        "display_name": "MicroSectors FANG+ Index -3X Inverse Leveraged ETN",
-        "aum": 110.93
-    },
-    {
-        "ticker": "DIG",
-        "display_name": "ProShares Ultra Energy",
-        "aum": 110.21
-    },
-    {
-        "ticker": "YANG",
-        "display_name": "Direxion Daily FTSE China Bear 3X Shares",
-        "aum": 109.56
-    },
-    {
-        "ticker": "DRIP",
-        "display_name": "Direxion Daily S&P Oil & Gas Exp. & Prod. Bear 2X Shares",
-        "aum": 97.19
-    },
-    {
-        "ticker": "LABD",
-        "display_name": "Direxion Daily S&P Biotech Bear 3X Shares",
-        "aum": 87.26
-    },
-    {
-        "ticker": "TECS",
-        "display_name": "Direxion Daily Technology Bear 3X Shares",
-        "aum": 85.29
-    },
-    {
-        "ticker": "TECS",
-        "display_name": "Direxion Daily Technology Bear 3X Shares",
-        "aum": 85.29
-    },
-    {
-        "ticker": "DUST",
-        "display_name": "Direxion Daily Gold Miners Index Bear 2X Shares",
-        "aum": 84.62
-    },
-    {
-        "ticker": "TWM",
-        "display_name": "ProShares UltraShort Russell2000",
-        "aum": 60.55
-    },
-    {
-        "ticker": "YCL",
-        "display_name": "ProShares Ultra Yen",
-        "aum": 45.02
-    },
-    {
-        "ticker": "ERY",
-        "display_name": "Direxion Daily Energy Bear 2X Shares",
-        "aum": 40.22
-    },
-    {
-        "ticker": "YCS",
-        "display_name": "ProShares UltraShort Yen",
-        "aum": 29.02
-    },
-    {
-        "ticker": "BERZ",
-        "display_name": "MicroSectors Solactive FANG & Innovation -3X Inverse Leveraged ETNs",
-        "aum": 23.74
-    },
-    {
-        "ticker": "SKF",
-        "display_name": "ProShares UltraShort Financials",
-        "aum": 19.81
-    },
-    {
-        "ticker": "DUG",
-        "display_name": "ProShares UltraShort Energy ETF",
-        "aum": 14.49
     }
 ]
