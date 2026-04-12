@@ -1,13 +1,33 @@
 [
     {
+        "ticker": "GOOGL",
+        "display_name": "Alphabet Inc.",
+        "aum": 3837652.37
+    },
+    {
         "ticker": "TQQQ",
         "display_name": "ProShares UltraPro QQQ",
         "aum": 24591.37
     },
     {
+        "ticker": "SOXX",
+        "display_name": "iShares Semiconductor ETF",
+        "aum": 20592.64
+    },
+    {
         "ticker": "SOXL",
         "display_name": "Direxion Daily Semiconductor Bull 3X Shares",
         "aum": 12233.68
+    },
+    {
+        "ticker": "SPYD",
+        "display_name": "State Street SPDR Portfolio S&P 500 High Dividend ETF",
+        "aum": 7048.5
+    },
+    {
+        "ticker": "SLAB",
+        "display_name": "Silicon Laboratories Inc.",
+        "aum": 6963.59
     },
     {
         "ticker": "SPXL",
@@ -30,13 +50,243 @@
         "aum": 3729.81
     },
     {
+        "ticker": "TMF",
+        "display_name": "Direxion Daily 20+ Year Treasury Bull 3X Shares",
+        "aum": 2984.87
+    },
+    {
+        "ticker": "TECL",
+        "display_name": "Direxion Daily Technology Bull 3X Shares",
+        "aum": 2977.22
+    },
+    {
         "ticker": "SQQQ",
         "display_name": "ProShares UltraPro Short QQQ",
         "aum": 2561.36
     },
     {
+        "ticker": "SPYX",
+        "display_name": "State Street SPDR S&P 500 Fossil Fuel Reserves Free ETF",
+        "aum": 2339.61
+    },
+    {
+        "ticker": "FAS",
+        "display_name": "Direxion Daily Financial Bull 3X Shares",
+        "aum": 1939.1
+    },
+    {
+        "ticker": "BITO",
+        "display_name": "ProShares Bitcoin ETF",
+        "aum": 1742.49
+    },
+    {
+        "ticker": "BULZ",
+        "display_name": "MicroSectors Solactive FANG Innovation 3X Leveraged ETNs",
+        "aum": 1496.54
+    },
+    {
+        "ticker": "QQQX",
+        "display_name": "Nuveen Nasdaq 100 Dynamic Overwrite Fund",
+        "aum": 1388.63
+    },
+    {
+        "ticker": "KORU",
+        "display_name": "Direxion Daily South Korea Bull 3X Shares",
+        "aum": 1088.24
+    },
+    {
+        "ticker": "SCO",
+        "display_name": "ProShares UltraShort Bloomberg Crude Oil",
+        "aum": 970.32
+    },
+    {
+        "ticker": "BITX",
+        "display_name": "2x Bitcoin Strategy ETF",
+        "aum": 961.27
+    },
+    {
         "ticker": "SOXS",
         "display_name": "Direxion Daily Semiconductor Bear 3X Shares",
         "aum": 855.73
+    },
+    {
+        "ticker": "DSPY",
+        "display_name": "Tema S&P 500 Historical Weight ETF Strategy",
+        "aum": 767.58
+    },
+    {
+        "ticker": "YINN",
+        "display_name": "Direxion Daily FTSE China Bull 3X Shares",
+        "aum": 728.58
+    },
+    {
+        "ticker": "SKOR",
+        "display_name": "FlexShares Credit-Scored US Corporate Bond Index Fund",
+        "aum": 687.36
+    },
+    {
+        "ticker": "UCO",
+        "display_name": "ProShares Ultra Bloomberg Crude Oil",
+        "aum": 622.31
+    },
+    {
+        "ticker": "LABU",
+        "display_name": "Direxion Daily S&P Biotech Bull 3X Shares",
+        "aum": 561.0
+    },
+    {
+        "ticker": "NAIL",
+        "display_name": "Direxion Daily Homebuilders & Supplies Bull 3X Shares",
+        "aum": 501.28
+    },
+    {
+        "ticker": "SPXU",
+        "display_name": "ProShares UltraPro Short S&P500",
+        "aum": 495.02
+    },
+    {
+        "ticker": "DPST",
+        "display_name": "Direxion Daily Regional Banks Bull 3X Shares",
+        "aum": 475.48
+    },
+    {
+        "ticker": "FNGS",
+        "display_name": "MicroSectors FANG+ ETN",
+        "aum": 447.44
+    },
+    {
+        "ticker": "SPXS",
+        "display_name": "Direxion Daily S&P 500 Bear 3X Shares",
+        "aum": 415.07
+    },
+    {
+        "ticker": "BOIL",
+        "display_name": "ProShares Ultra Bloomberg Natural Gas",
+        "aum": 399.48
+    },
+    {
+        "ticker": "GUSH",
+        "display_name": "Direxion Daily S&P Oil & Gas Exp. & Prod. Bull 2X Shares",
+        "aum": 396.36
+    },
+    {
+        "ticker": "SPYU",
+        "display_name": "MAX S&P 500 4X Leveraged ETN",
+        "aum": 333.63
+    },
+    {
+        "ticker": "TSPY",
+        "display_name": "TappAlpha SPY Growth & Daily Income ETF",
+        "aum": 237.06
+    },
+    {
+        "ticker": "KOLD",
+        "display_name": "ProShares UltraShort Bloomberg Natural Gas",
+        "aum": 206.83
+    },
+    {
+        "ticker": "TMV",
+        "display_name": "Direxion Daily 20+ Year Treasury Bear 3X Shares",
+        "aum": 173.59
+    },
+    {
+        "ticker": "NVDAX",
+        "display_name": "Wells Fargo Funds Trust - Wells Fargo Advantage Diversified Equity Fund",
+        "aum": 165.29
+    },
+    {
+        "ticker": "FAZ",
+        "display_name": "Direxion Daily Financial Bear 3X Shares",
+        "aum": 140.83
+    },
+    {
+        "ticker": "SSPY",
+        "display_name": "Stratified LargeCap Index ETF",
+        "aum": 115.57
+    },
+    {
+        "ticker": "FNGD",
+        "display_name": "MicroSectors FANG+ Index -3X Inverse Leveraged ETN",
+        "aum": 110.93
+    },
+    {
+        "ticker": "YANG",
+        "display_name": "Direxion Daily FTSE China Bear 3X Shares",
+        "aum": 109.56
+    },
+    {
+        "ticker": "DRIP",
+        "display_name": "Direxion Daily S&P Oil & Gas Exp. & Prod. Bear 2X Shares",
+        "aum": 97.19
+    },
+    {
+        "ticker": "TSLAX",
+        "display_name": "Transamerica Small Cap Value A",
+        "aum": 92.97
+    },
+    {
+        "ticker": "LABD",
+        "display_name": "Direxion Daily S&P Biotech Bear 3X Shares",
+        "aum": 87.26
+    },
+    {
+        "ticker": "TECS",
+        "display_name": "Direxion Daily Technology Bear 3X Shares",
+        "aum": 85.29
+    },
+    {
+        "ticker": "QQQU",
+        "display_name": "Direxion Daily Magnificent 7 Bull 2X Shares",
+        "aum": 75.2
+    },
+    {
+        "ticker": "TSLS",
+        "display_name": "Direxion Daily TSLA Bear 1X Shares",
+        "aum": 69.92
+    },
+    {
+        "ticker": "SEMG",
+        "display_name": "Suncoast Select Growth ETF",
+        "aum": 51.96
+    },
+    {
+        "ticker": "CHND",
+        "display_name": "China Media Inc.",
+        "aum": 39.75
+    },
+    {
+        "ticker": "LKOR",
+        "display_name": "FlexShares Credit-Scored US Long Corporate Bond Index Fund",
+        "aum": 35.33
+    },
+    {
+        "ticker": "QQQD",
+        "display_name": "Direxion Daily Magnificent 7 Bear 1X Shares",
+        "aum": 28.4
+    },
+    {
+        "ticker": "LABX",
+        "display_name": "Tradr 2X Long ALAB Daily ETF",
+        "aum": 27.39
+    },
+    {
+        "ticker": "NVDS",
+        "display_name": "Tradr 1.5X Short NVDA Daily ETF",
+        "aum": 26.1
+    },
+    {
+        "ticker": "BERZ",
+        "display_name": "MicroSectors Solactive FANG & Innovation -3X Inverse Leveraged ETNs",
+        "aum": 23.74
+    },
+    {
+        "ticker": "QQQS",
+        "display_name": "Invesco NASDAQ Future Gen 200 ETF",
+        "aum": 12.53
+    },
+    {
+        "ticker": "FINLX",
+        "display_name": "Delaware Group Limited Term Government Funds - Tax-Free New Jersey Fund",
+        "aum": 11.02
     }
 ]
