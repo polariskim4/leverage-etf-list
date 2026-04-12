@@ -1,7 +1,7 @@
 [
     {
-        "ticker": "ERROR",
-        "display_name": "웹사이트 보안 차단으로 인해 수집 실패",
+        "ticker": "N/A",
+        "display_name": "데이터 업데이트 일시 오류",
         "aum": 0
     }
 ]
