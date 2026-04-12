@@ -3,52 +3,52 @@ import json
 import time
 
 def get_leveraged_etf_rankings():
-    # 시장에서 유명한 레버리지 ETF들을 최대한 많이 리스트업합니다.
-    # 로봇은 여기서 진짜 자산 규모(AUM)가 큰 것들을 골라냅니다.
+    # 수집할 대표적인 레버리지 ETF 리스트
     tickers = [
         "TQQQ", "SQQQ", "SOXL", "SOXS", "UPRO", "SPXU", "FNGU", "FNGD", 
         "TNA", "TZA", "BULZ", "BERZ", "LABU", "LABD", "YINN", "YANG",
-        "TECL", "TECS", "UVXY", "SVXY", "BITO", "USD", "SSG", "DRN", "DRV",
-        "QLD", "QID", "SSO", "SDS", "UWM", "TWM", "DIG", "DUG", "UYG", "SKF"
+        "TECL", "TECS", "BITO", "USD", "QLD", "QID", "SSO", "SDS"
     ]
     
     final_data = []
-    print(f"🚀 총 {len(tickers)}개 후보 종목 탐색 시작...")
+    print(f"🔎 {len(tickers)}개 종목 수집 시작...")
 
     for ticker in tickers:
         try:
             etf = yf.Ticker(ticker)
-            info = etf.info
+            info = etf.fast_info # 더 빠른 데이터 수집 방식 사용
             
-            # AUM (Total Assets) 정보 가져오기
-            aum = info.get('totalAssets')
-            name = info.get('longName', f"{ticker} Leverage ETF")
+            # 자산 규모(AUM) 가져오기
+            aum = info.get('market_cap', 0) # market_cap으로 대체하여 더 정확하게 수집
             
-            if aum:
-                # 단위를 Million($MM, 백만 달러)으로 변환
-                aum_mm = round(aum / 1_000_000, 2)
+            # 종목 전체 이름 가져오기
+            full_name = etf.info.get('longName', f"{ticker} Leverage ETF")
+            
+            if aum > 0:
                 final_data.append({
                     "ticker": ticker,
-                    "display_name": name,
-                    "aum": aum_mm
+                    "display_name": full_name,
+                    "aum": round(aum / 1_000_000, 2) # Million($) 단위로 변환
                 })
-                print(f"✅ {ticker}: ${aum_mm}MM 확인")
+                print(f"✅ {ticker} 수집 완료")
+            else:
+                print(f"⚠️ {ticker} 데이터 없음 (AUM 0)")
             
-            time.sleep(0.2) # 차단 방지용 휴식
+            time.sleep(0.1) # 서버 차단 방지
         except Exception as e:
-            print(f"❌ {ticker} 수집 실패")
+            print(f"❌ {ticker} 오류 발생: {e}")
             continue
 
     # AUM(자산 규모)이 큰 순서대로 정렬
     final_data = sorted(final_data, key=lambda x: x['aum'], reverse=True)
 
-    # 데이터가 정상적으로 수집되었을 때만 저장
+    # 데이터 저장
     if final_data:
         with open('data.json', 'w', encoding='utf-8') as f:
             json.dump(final_data, f, ensure_ascii=False, indent=4)
-        print(f"🎉 총 {len(final_data)}개 종목 순위 업데이트 완료!")
+        print(f"🎉 총 {len(final_data)}개 종목 업데이트 성공!")
     else:
-        print("🚨 수집된 데이터가 없습니다.")
+        print("🚨 수집된 데이터가 하나도 없습니다. 코드를 다시 점검해야 합니다.")
 
 if __name__ == "__main__":
     get_leveraged_etf_rankings()
