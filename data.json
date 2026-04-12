@@ -1,12 +1,7 @@
 [
     {
-        "ticker": "TQQQ",
-        "display_name": "ProShares UltraPro QQQ (나스닥100 3배) - 점검중",
-        "aum": 25000.0
-    },
-    {
-        "ticker": "SOXL",
-        "display_name": "Direxion Semiconductor Bull 3X (반도체 3배) - 점검중",
-        "aum": 12000.0
+        "ticker": "ERROR",
+        "display_name": "웹사이트 보안 차단으로 인해 수집 실패",
+        "aum": 0
     }
 ]
