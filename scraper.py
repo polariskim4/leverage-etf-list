@@ -1,53 +1,50 @@
 import requests
+import pandas as pd
 import json
 
-def get_etf_data():
-    # 보안에 민감한 사이트를 피하고, 야후 파이낸스 API 구조를 활용합니다.
-    tickers = ["TQQQ", "SQQQ", "SOXL", "SOXS", "UPRO", "SPXU", "FNGU", "FNGD", "BULZ", "LABU", "TECL"]
-    final_data = []
-    
-    headers = {"User-Agent": "Mozilla/5.0"}
-    
-    for ticker in tickers:
-        try:
-            # 야후 파이낸스 데이터 소스
-            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-            res = requests.get(url, headers=headers, timeout=10)
-            data = res.json()
-            
-            # 종목 정보 추출
-            meta = data['chart']['result'][0]['meta']
-            price = meta.get('regularMarketPrice', 0)
-            
-            # 이름 설정 (보통 티커명에 설명을 붙임)
-            names = {
-                "TQQQ": "ProShares UltraPro QQQ (나스닥100 3배)",
-                "SQQQ": "ProShares UltraPro Short QQQ (나스닥100 인버스 3배)",
-                "SOXL": "Direxion Daily Semiconductor Bull 3X (반도체 3배)",
-                "SOXS": "Direxion Daily Semiconductor Bear 3X (반도체 인버스 3배)",
-                "UPRO": "ProShares UltraPro S&P500 (S&P500 3배)",
-                "FNGU": "MicroSectors FANG+ Index 3X Leveraged (빅테크 3배)",
-                "BULZ": "MicroSectors FANG+ & Tech 3X Leveraged (기술주 3배)"
-            }
-            
-            final_data.append({
-                "ticker": ticker,
-                "display_name": names.get(ticker, f"{ticker} Leverage ETF"),
-                "aum": price # AUM 대신 현재가를 임시로 순위 지표로 사용 (차단 방지용)
-            })
-        except:
-            continue
+def get_leveraged_etf_rankings():
+    # 보안이 덜 까다롭고 데이터가 방대한 소스를 활용합니다.
+    # 이 API는 레버리지 ETF 목록을 포함한 상세 데이터를 제공합니다.
+    url = "https://api.stockanalysis.com/wp-json/sa/get_stock_list?type=etf&asset_class=Leveraged"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
 
-    # 만약 위 과정이 다 실패하면 절대 빈 화면이 안 뜨도록 수동으로라도 채웁니다.
-    if not final_data:
-        final_data = [
-            {"ticker": "TQQQ", "display_name": "ProShares UltraPro QQQ (나스닥100 3배)", "aum": 60.0},
-            {"ticker": "SOXL", "display_name": "Direxion Semi Bull 3X (반도체 3배)", "aum": 45.0},
-            {"ticker": "FNGU", "display_name": "MicroSectors FANG+ 3X (빅테크 3배)", "aum": 30.0}
-        ]
+    try:
+        response = requests.get(url, headers=headers, timeout=15)
+        data = response.json()
+        
+        # 전체 ETF 리스트 추출
+        raw_list = data.get('data', [])
+        
+        extracted_data = []
+        for item in raw_list:
+            # AUM 정보가 있고, 레버리지 관련 키워드가 있는 것들만 필터링
+            # (StockAnalysis API에서 'asset_class'가 Leveraged인 것만 가져오지만 한번 더 검증)
+            ticker = item.get('s') # Ticker
+            name = item.get('n')   # Name
+            aum = item.get('a')    # AUM (Assets Under Management)
+            
+            if aum and aum >= 10: # AUM 10M$ 이상인 것만
+                extracted_data.append({
+                    "ticker": ticker,
+                    "display_name": f"{name} ({ticker})",
+                    "aum": float(aum)
+                })
 
+        # AUM(자산 규모) 기준으로 내림차순 정렬 (큰 것부터)
+        final_list = sorted(extracted_data, key=lambda x: x['aum'], reverse=True)
+        
+        print(f"✅ 총 {len(final_list)}개의 레버리지 ETF를 발견했습니다.")
+
+    except Exception as e:
+        print(f"⚠️ 자동 수집 중 에러 발생: {e}")
+        # 실패 시 최소한의 데이터라도 유지
+        final_list = [{"ticker": "ERROR", "display_name": "데이터 자동 갱신 실패 (보안 차단)", "aum": 0}]
+
+    # 결과 저장
     with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(final_data, f, ensure_ascii=False, indent=4)
+        json.dump(final_list, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
-    get_etf_data()
+    get_leveraged_etf_rankings()
