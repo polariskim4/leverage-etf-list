@@ -2,23 +2,23 @@ name: Daily ETF Data Update
 
 on:
   schedule:
-    - cron: '0 21 * * *'
-  workflow_dispatch:
+    - cron: '0 21 * * *' # 매일 아침 6시(한국시간) 자동 실행
+  workflow_dispatch: # 수동 실행 버튼 활성화
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
       - name: Install dependencies
-        # yfinance라는 강력한 금융 라이브러리를 추가합니다.
-        run: pip install pandas requests yfinance
+        run: |
+          pip install yfinance requests pandas
 
       - name: Run Scraper
         run: python scraper.py
@@ -28,5 +28,5 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add data.json
-          git commit -m "Update leveraged ETF rankings automatically" || exit 0
-          git push
+          # 변경사항이 있을 때만 커밋합니다.
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update ETF data" && git push)
