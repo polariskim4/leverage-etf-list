@@ -17,8 +17,9 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
+        # cloudscraper가 추가되었습니다!
         run: |
-          pip install pandas requests lxml html5lib
+          pip install pandas requests lxml html5lib cloudscraper
 
       - name: Run Scraper
         run: python scraper.py
