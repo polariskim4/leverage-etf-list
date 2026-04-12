@@ -1075,13 +1075,13 @@
         "aum": 22.26
     },
     {
-        "ticker": "SEF",
-        "display_name": "ProShares Short Financials",
+        "ticker": "SSG",
+        "display_name": "ProShares UltraShort Semiconductors",
         "aum": 21.06
     },
     {
-        "ticker": "SSG",
-        "display_name": "ProShares UltraShort Semiconductors",
+        "ticker": "SEF",
+        "display_name": "ProShares Short Financials",
         "aum": 21.06
     },
     {
@@ -1515,13 +1515,13 @@
         "aum": 7.62
     },
     {
-        "ticker": "AVXX",
-        "display_name": "Defiance Daily Target 2X Long AVAV ETF",
+        "ticker": "SNOU",
+        "display_name": "T-Rex 2X Long SNOW Daily Target ETF",
         "aum": 7.6
     },
     {
-        "ticker": "SNOU",
-        "display_name": "T-Rex 2X Long SNOW Daily Target ETF",
+        "ticker": "AVXX",
+        "display_name": "Defiance Daily Target 2X Long AVAV ETF",
         "aum": 7.6
     },
     {
@@ -1635,13 +1635,13 @@
         "aum": 5.6
     },
     {
-        "ticker": "LMBO",
-        "display_name": "Direxion Daily Crypto Industry Bull 2X Shares ETF",
+        "ticker": "OKLS",
+        "display_name": "Defiance Daily Target 2X Short OKLO ETF",
         "aum": 5.57
     },
     {
-        "ticker": "OKLS",
-        "display_name": "Defiance Daily Target 2X Short OKLO ETF",
+        "ticker": "LMBO",
+        "display_name": "Direxion Daily Crypto Industry Bull 2X Shares ETF",
         "aum": 5.57
     },
     {
@@ -1685,13 +1685,13 @@
         "aum": 4.44
     },
     {
-        "ticker": "QQXL",
-        "display_name": "ProShares Ultra QQQ TOP 30",
+        "ticker": "OSCX",
+        "display_name": "Defiance Daily Target 2x Long OSCR ETF",
         "aum": 4.41
     },
     {
-        "ticker": "OSCX",
-        "display_name": "Defiance Daily Target 2x Long OSCR ETF",
+        "ticker": "QQXL",
+        "display_name": "ProShares Ultra QQQ TOP 30",
         "aum": 4.41
     },
     {
@@ -1790,13 +1790,13 @@
         "aum": 3.25
     },
     {
-        "ticker": "MDBX",
-        "display_name": "Tradr 2X Long MDB Daily ETF",
+        "ticker": "TBXU",
+        "display_name": "Direxion Daily Biotech Top 5 Bull 2X ETF",
         "aum": 3.14
     },
     {
-        "ticker": "TBXU",
-        "display_name": "Direxion Daily Biotech Top 5 Bull 2X ETF",
+        "ticker": "MDBX",
+        "display_name": "Tradr 2X Long MDB Daily ETF",
         "aum": 3.14
     },
     {
@@ -1810,13 +1810,13 @@
         "aum": 2.99
     },
     {
-        "ticker": "BEZ",
-        "display_name": "Tradr 2X Short Be Daily ETF",
+        "ticker": "NBIZ",
+        "display_name": "Tradr 2X Short Nbis Daily ETF",
         "aum": 2.97
     },
     {
-        "ticker": "NBIZ",
-        "display_name": "Tradr 2X Short Nbis Daily ETF",
+        "ticker": "BEZ",
+        "display_name": "Tradr 2X Short Be Daily ETF",
         "aum": 2.97
     },
     {
@@ -2055,13 +2055,13 @@
         "aum": 0.5
     },
     {
-        "ticker": "ABNG",
-        "display_name": "Leverage Shares 2X Long Abnb Daily ETF",
+        "ticker": "SOLX",
+        "display_name": "T-REX 2X Long SOL Daily Target ETF",
         "aum": 0.44
     },
     {
-        "ticker": "SOLX",
-        "display_name": "T-REX 2X Long SOL Daily Target ETF",
+        "ticker": "ABNG",
+        "display_name": "Leverage Shares 2X Long Abnb Daily ETF",
         "aum": 0.44
     },
     {
