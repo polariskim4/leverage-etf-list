@@ -6,7 +6,7 @@ import os
 def scrap_final_verified():
     # 필수 리스트 (BULZ, BERZ, FNGO, FNGS 포함)
     user_essential_list = [
-        "BULZ", "BERZ", "FNGO", "FNGS", "TQQQ", "QLD", "SSO", "UPRO", "SQQQ", "AGQ", 
+        "BULZ", "BERZ", "FNGU", "FNGO", "FNGS", "TQQQ", "QLD", "SSO", "UPRO", "SQQQ", "AGQ", 
         "USD", "SH", "UGL", "SCO", "PSQ", "ROM", "UDOW", "UYG", "UCO", "SDS", "SPXU", 
         "DDM", "BOIL", "BITU", "QID", "URTY", "UVXY", "TBT", "UWM", "ETHT", "SBIT", 
         "SVXY", "SDOW", "KOLD", "BITI", "RWM", "CRCA", "ZSL", "MVV", "DOG", "SJB", 
