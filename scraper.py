@@ -69,8 +69,19 @@ def scrap_final_verified():
             etf = yf.Ticker(ticker)
             info = etf.info
             
-            # [수정 핵심] AUM이 없으면 0으로 처리해서 로직이 멈추지 않게 함
-            raw_aum = info.get('totalAssets') or info.get('marketCap') or 0
+            # [수정] 데이터가 0으로 나오는 현상을 방지하기 위한 3단계 추적
+            # 1. 기본 자산/시총 정보 시도
+            raw_aum = info.get('totalAssets') or info.get('marketCap')
+            
+            # 2. info에 데이터가 없다면 fast_info에서 시가총액 재시도 (FNGU 등 보완)
+            if not raw_aum:
+                try:
+                    raw_aum = etf.fast_info.get('market_cap')
+                except:
+                    pass
+            
+            # 3. 여전히 없다면 0으로 최종 할당
+            raw_aum = raw_aum if raw_aum else 0
             
             # [수정 핵심] 조건문 분리: 리스트에 있는 종목이면 AUM 데이터가 없어도 통과!
             if ticker not in user_essential_list:
