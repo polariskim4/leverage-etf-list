@@ -1600,13 +1600,13 @@
         "aum": 6.64
     },
     {
-        "ticker": "VSTL",
-        "display_name": "Defiance Daily Target 2X Long VST ETF",
+        "ticker": "NFXS",
+        "display_name": "Direxion Daily NFLX Bear 1X Shares",
         "aum": 6.55
     },
     {
-        "ticker": "NFXS",
-        "display_name": "Direxion Daily NFLX Bear 1X Shares",
+        "ticker": "VSTL",
+        "display_name": "Defiance Daily Target 2X Long VST ETF",
         "aum": 6.55
     },
     {
@@ -1645,13 +1645,13 @@
         "aum": 5.6
     },
     {
-        "ticker": "LMBO",
-        "display_name": "Direxion Daily Crypto Industry Bull 2X Shares ETF",
+        "ticker": "OKLS",
+        "display_name": "Defiance Daily Target 2X Short OKLO ETF",
         "aum": 5.57
     },
     {
-        "ticker": "OKLS",
-        "display_name": "Defiance Daily Target 2X Short OKLO ETF",
+        "ticker": "LMBO",
+        "display_name": "Direxion Daily Crypto Industry Bull 2X Shares ETF",
         "aum": 5.57
     },
     {
@@ -1800,13 +1800,13 @@
         "aum": 3.25
     },
     {
-        "ticker": "MDBX",
-        "display_name": "Tradr 2X Long MDB Daily ETF",
+        "ticker": "TBXU",
+        "display_name": "Direxion Daily Biotech Top 5 Bull 2X ETF",
         "aum": 3.14
     },
     {
-        "ticker": "TBXU",
-        "display_name": "Direxion Daily Biotech Top 5 Bull 2X ETF",
+        "ticker": "MDBX",
+        "display_name": "Tradr 2X Long MDB Daily ETF",
         "aum": 3.14
     },
     {
@@ -1820,13 +1820,13 @@
         "aum": 2.99
     },
     {
-        "ticker": "NBIZ",
-        "display_name": "Tradr 2X Short Nbis Daily ETF",
+        "ticker": "BEZ",
+        "display_name": "Tradr 2X Short Be Daily ETF",
         "aum": 2.97
     },
     {
-        "ticker": "BEZ",
-        "display_name": "Tradr 2X Short Be Daily ETF",
+        "ticker": "NBIZ",
+        "display_name": "Tradr 2X Short Nbis Daily ETF",
         "aum": 2.97
     },
     {
