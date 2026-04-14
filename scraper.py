@@ -4,7 +4,7 @@ import time
 import os
 
 def scrap_final_verified():
-    # 필수 리스트 (BULZ, BERZ, FNGO, FNGS 포함)
+    # 1. 사용자님의 기존 전체 리스트 (하나도 빠짐없이 복구)
     user_essential_list = [
         "BULZ", "BERZ", "FNGU", "FNGO", "FNGS", "TQQQ", "QLD", "SSO", "UPRO", "SQQQ", "AGQ", 
         "USD", "SH", "UGL", "SCO", "PSQ", "ROM", "UDOW", "UYG", "UCO", "SDS", "SPXU", 
@@ -58,7 +58,6 @@ def scrap_final_verified():
     ]
 
     search_pool = list(set(user_essential_list))
-    # 블랙리스트 재점검 (BULZ와 혼동될 만한 대형주 제외)
     blacklist = ["GOOGL", "GOOG", "FBTC", "ERO", "FETH"]
 
     final_results = []
@@ -69,33 +68,41 @@ def scrap_final_verified():
         try:
             etf = yf.Ticker(ticker)
             info = etf.info
-            aum = info.get('totalAssets') or info.get('marketCap')
             
-            # $10MM 이상이거나 필수 리스트에 있는 경우 모두 허용
-            if not aum or (aum < 10_000_000 and ticker not in user_essential_list):
-                continue
+            # [수정 핵심] AUM이 없으면 0으로 처리해서 로직이 멈추지 않게 함
+            raw_aum = info.get('totalAssets') or info.get('marketCap') or 0
+            
+            # [수정 핵심] 조건문 분리: 리스트에 있는 종목이면 AUM 데이터가 없어도 통과!
+            if ticker not in user_essential_list:
+                if raw_aum < 10_000_000: # 리스트에도 없는데 시총도 작으면 스킵
+                    continue
 
             name = info.get('longName', ticker)
-            
-            # 키워드 필터링 대폭 강화 (ETN, MicroSectors 등 포함)
             lev_keywords = ['Leveraged', 'Bull', 'Bear', '2x', '3x', 'Short', 'Ultra', 
                             'Inverse', 'Strategy', 'Double', 'Triple', 'ETN', 'MicroSectors']
             
+            # 필수 리스트에 있거나 이름에 키워드가 있으면 결과에 포함
             is_valid = any(k.lower() in name.lower() for k in lev_keywords) or ticker in user_essential_list
             
             if is_valid:
                 final_results.append({
                     "ticker": ticker,
                     "display_name": name,
-                    "aum": round(aum / 1_000_000, 2)
+                    "aum": round(raw_aum / 1_000_000, 2)
                 })
-                print(f"✅ {ticker} ($ {aum/1_000_000:.1f}MM) 수집 완료")
+                print(f"✅ {ticker} ($ {raw_aum/1_000_000:.1f}MM) 수집 완료")
         except:
+            # 에러가 나도 필수 리스트 종목이면 0원 처리해서라도 넣음 (목록 유지용)
+            if ticker in user_essential_list:
+                final_results.append({
+                    "ticker": ticker,
+                    "display_name": ticker,
+                    "aum": 0
+                })
             continue
 
+    # AUM 순 정렬
     final_results = sorted(final_results, key=lambda x: x['aum'], reverse=True)
-
-    # 저장 직전 개수 확인 로그
     print(f"📦 최종 저장할 종목 수: {len(final_results)}개")
 
     with open('data.json', 'w', encoding='utf-8') as f:
