@@ -385,6 +385,11 @@
         "aum": 192.97
     },
     {
+        "ticker": "IRE",
+        "display_name": "Defiance Daily Target 2X Long IREN ETF",
+        "aum": 192.94
+    },
+    {
         "ticker": "TSLQ",
         "display_name": "Tradr 2X Short TSLA Daily ETF",
         "aum": 188.54
@@ -401,7 +406,7 @@
     },
     {
         "ticker": "RWM",
-        "display_name": "ProShares Short Russell2000",
+        "display_name": "RWM",
         "aum": 174.75
     },
     {
@@ -438,11 +443,6 @@
         "ticker": "SJB",
         "display_name": "ProShares Short High Yield",
         "aum": 148.08
-    },
-    {
-        "ticker": "CRCA",
-        "display_name": "ProShares Ultra CRCL",
-        "aum": 148.01
     },
     {
         "ticker": "EDC",
@@ -646,7 +646,7 @@
     },
     {
         "ticker": "UBT",
-        "display_name": "ProShares Ultra 20+ Year Treasury",
+        "display_name": "UBT",
         "aum": 71.89
     },
     {
@@ -792,6 +792,11 @@
     {
         "ticker": "GOOX",
         "display_name": "T-Rex 2X Long Alphabet Daily Target ETF",
+        "aum": 40.93
+    },
+    {
+        "ticker": "URSP",
+        "display_name": "ProShares Trust",
         "aum": 40.93
     },
     {
@@ -1108,11 +1113,6 @@
         "ticker": "GMEU",
         "display_name": "T-Rex 2X Long GME Daily Target ETF",
         "aum": 20.27
-    },
-    {
-        "ticker": "SLON",
-        "display_name": "ProShares Ultra Solana ETF",
-        "aum": 20.15
     },
     {
         "ticker": "MST",
@@ -1585,11 +1585,6 @@
         "aum": 6.96
     },
     {
-        "ticker": "HOOZ",
-        "display_name": "Defiance Daily Target 2X Short HOOD ETF",
-        "aum": 6.92
-    },
-    {
         "ticker": "GLXU",
         "display_name": "GLXU",
         "aum": 6.75
@@ -1605,13 +1600,13 @@
         "aum": 6.64
     },
     {
-        "ticker": "VSTL",
-        "display_name": "Defiance Daily Target 2X Long VST ETF",
+        "ticker": "NFXS",
+        "display_name": "Direxion Daily NFLX Bear 1X Shares",
         "aum": 6.55
     },
     {
-        "ticker": "NFXS",
-        "display_name": "Direxion Daily NFLX Bear 1X Shares",
+        "ticker": "VSTL",
+        "display_name": "Defiance Daily Target 2X Long VST ETF",
         "aum": 6.55
     },
     {
@@ -1658,11 +1653,6 @@
         "ticker": "LMBO",
         "display_name": "Direxion Daily Crypto Industry Bull 2X Shares ETF",
         "aum": 5.57
-    },
-    {
-        "ticker": "PLTA",
-        "display_name": "ProShares Ultra PLTR",
-        "aum": 5.31
     },
     {
         "ticker": "ASMU",
@@ -1820,6 +1810,11 @@
         "aum": 3.14
     },
     {
+        "ticker": "UNHU",
+        "display_name": "Direxion Daily Unh Bull 2X ETF",
+        "aum": 3.07
+    },
+    {
         "ticker": "PATX",
         "display_name": "Tradr 2X Long PATH Daily ETF",
         "aum": 3.01
@@ -1933,11 +1928,6 @@
         "ticker": "AFRU",
         "display_name": "T-REX 2X Long AFRM Daily Target ETF",
         "aum": 2.17
-    },
-    {
-        "ticker": "COIA",
-        "display_name": "ProShares Ultra COIN",
-        "aum": 2.11
     },
     {
         "ticker": "CSCS",
@@ -2080,13 +2070,13 @@
         "aum": 0.5
     },
     {
-        "ticker": "ABNG",
-        "display_name": "Leverage Shares 2X Long Abnb Daily ETF",
+        "ticker": "SOLX",
+        "display_name": "T-REX 2X Long SOL Daily Target ETF",
         "aum": 0.44
     },
     {
-        "ticker": "SOLX",
-        "display_name": "T-REX 2X Long SOL Daily Target ETF",
+        "ticker": "ABNG",
+        "display_name": "Leverage Shares 2X Long Abnb Daily ETF",
         "aum": 0.44
     },
     {
@@ -2125,33 +2115,8 @@
         "aum": 0.11
     },
     {
-        "ticker": "TTXU",
-        "display_name": "Direxion Daily Technology Top 5 Bull 2X ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ADBU",
-        "display_name": "Direxion Daily Adbe Bull 2X ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "URSP",
-        "display_name": "ProShares Trust",
-        "aum": 0.0
-    },
-    {
-        "ticker": "TEXU",
-        "display_name": "Direxion Daily Energy Top 5 Bull 2X ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "DAMD",
-        "display_name": "Defiance Daily Target 2X Short AMD ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "FNGU",
-        "display_name": "FNGU",
+        "ticker": "TSLI",
+        "display_name": "ProShares Ultra TSLA",
         "aum": 0.0
     },
     {
@@ -2160,13 +2125,8 @@
         "aum": 0.0
     },
     {
-        "ticker": "MRNX",
-        "display_name": "Defiance Daily Target 2X Long MRNA ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ZETX",
-        "display_name": "Defiance Daily Target 2X Long ZETA ETF",
+        "ticker": "COHX",
+        "display_name": "Tradr 2X Long COHR Daily ETF",
         "aum": 0.0
     },
     {
@@ -2175,13 +2135,8 @@
         "aum": 0.0
     },
     {
-        "ticker": "TXNU",
-        "display_name": "Direxion Daily Txn Bull 2X ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "TSXU",
-        "display_name": "Direxion Daily Semiconductors Top 5 Bull 2X ETF",
+        "ticker": "DAMD",
+        "display_name": "Defiance Daily Target 2X Short AMD ETF",
         "aum": 0.0
     },
     {
@@ -2190,28 +2145,13 @@
         "aum": 0.0
     },
     {
-        "ticker": "COHX",
-        "display_name": "Tradr 2X Long COHR Daily ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "TSXD",
-        "display_name": "Direxion Daily Semiconductors Top 5 Bear 2X ETF",
-        "aum": 0.0
-    },
-    {
         "ticker": "MPL",
         "display_name": "Defiance Daily Target 2X Long MP ETF",
         "aum": 0.0
     },
     {
-        "ticker": "IRE",
-        "display_name": "Defiance Daily Target 2X Long IREN ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "TTXD",
-        "display_name": "Direxion Daily Technology Top 5 Bear 2X ETF",
+        "ticker": "FNGU",
+        "display_name": "FNGU",
         "aum": 0.0
     },
     {
@@ -2220,13 +2160,28 @@
         "aum": 0.0
     },
     {
-        "ticker": "UNHU",
-        "display_name": "Direxion Daily Unh Bull 2X ETF",
+        "ticker": "COIA",
+        "display_name": "ProShares Ultra COIN",
         "aum": 0.0
     },
     {
-        "ticker": "TSLI",
-        "display_name": "ProShares Ultra TSLA",
+        "ticker": "TEXU",
+        "display_name": "Direxion Daily Energy Top 5 Bull 2X ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "RCAX",
+        "display_name": "Defiance Daily Target 2X Long RCAT ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "MRNX",
+        "display_name": "Defiance Daily Target 2X Long MRNA ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "HOOZ",
+        "display_name": "Defiance Daily Target 2X Short HOOD ETF",
         "aum": 0.0
     },
     {
@@ -2235,8 +2190,53 @@
         "aum": 0.0
     },
     {
-        "ticker": "RCAX",
-        "display_name": "Defiance Daily Target 2X Long RCAT ETF",
+        "ticker": "TXNU",
+        "display_name": "TXNU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "CRCA",
+        "display_name": "ProShares Ultra CRCL",
+        "aum": 0.0
+    },
+    {
+        "ticker": "SLON",
+        "display_name": "ProShares Ultra Solana ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "PLTA",
+        "display_name": "ProShares Ultra PLTR",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ADBU",
+        "display_name": "Direxion Daily Adbe Bull 2X ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "TSXD",
+        "display_name": "Direxion Daily Semiconductors Top 5 Bear 2X ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ZETX",
+        "display_name": "Defiance Daily Target 2X Long ZETA ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "TSXU",
+        "display_name": "Direxion Daily Semiconductors Top 5 Bull 2X ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "TTXU",
+        "display_name": "Direxion Daily Technology Top 5 Bull 2X ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "TTXD",
+        "display_name": "Direxion Daily Technology Top 5 Bear 2X ETF",
         "aum": 0.0
     }
 ]
