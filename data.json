@@ -880,13 +880,13 @@
         "aum": 43.65
     },
     {
-        "ticker": "SMU",
-        "display_name": "Tradr 2X Long SMR Daily ETF",
+        "ticker": "RGTX",
+        "display_name": "Defiance Daily Target 2X Long RGTI ETF",
         "aum": 43.29
     },
     {
-        "ticker": "RGTX",
-        "display_name": "Defiance Daily Target 2X Long RGTI ETF",
+        "ticker": "SMU",
+        "display_name": "Tradr 2X Long SMR Daily ETF",
         "aum": 43.29
     },
     {
@@ -1400,13 +1400,13 @@
         "aum": 13.65
     },
     {
-        "ticker": "SKF",
-        "display_name": "ProShares UltraShort Financials",
+        "ticker": "EUM",
+        "display_name": "ProShares Short MSCI Emerging Markets",
         "aum": 13.58
     },
     {
-        "ticker": "EUM",
-        "display_name": "ProShares Short MSCI Emerging Markets",
+        "ticker": "SKF",
+        "display_name": "ProShares UltraShort Financials",
         "aum": 13.58
     },
     {
@@ -1540,13 +1540,13 @@
         "aum": 10.46
     },
     {
-        "ticker": "EFZ",
-        "display_name": "ProShares Short MSCI EAFE",
+        "ticker": "KTUP",
+        "display_name": "T-REX 2X Long KTOS Daily Target ETF",
         "aum": 10.4
     },
     {
-        "ticker": "KTUP",
-        "display_name": "T-REX 2X Long KTOS Daily Target ETF",
+        "ticker": "EFZ",
+        "display_name": "ProShares Short MSCI EAFE",
         "aum": 10.4
     },
     {
@@ -1750,13 +1750,13 @@
         "aum": 5.79
     },
     {
-        "ticker": "AIBD",
-        "display_name": "Direxion Daily AI And Big Data Bear 2X Shares",
+        "ticker": "CONX",
+        "display_name": "Direxion Daily COIN Bull 2X ETF",
         "aum": 5.75
     },
     {
-        "ticker": "CONX",
-        "display_name": "Direxion Daily COIN Bull 2X ETF",
+        "ticker": "AIBD",
+        "display_name": "Direxion Daily AI And Big Data Bear 2X Shares",
         "aum": 5.75
     },
     {
@@ -1860,13 +1860,13 @@
         "aum": 3.89
     },
     {
-        "ticker": "TSLI",
-        "display_name": "ProShares Ultra TSLA",
+        "ticker": "COZX",
+        "display_name": "Tradr 2X Long CORZ Daily ETF",
         "aum": 3.86
     },
     {
-        "ticker": "COZX",
-        "display_name": "Tradr 2X Long CORZ Daily ETF",
+        "ticker": "TSLI",
+        "display_name": "ProShares Ultra TSLA",
         "aum": 3.86
     },
     {
@@ -1905,13 +1905,13 @@
         "aum": 3.45
     },
     {
-        "ticker": "RXD",
-        "display_name": "ProShares UltraShort Health Care",
+        "ticker": "ADBU",
+        "display_name": "Direxion Daily Adbe Bull 2X ETF",
         "aum": 3.14
     },
     {
-        "ticker": "ADBU",
-        "display_name": "Direxion Daily Adbe Bull 2X ETF",
+        "ticker": "RXD",
+        "display_name": "ProShares UltraShort Health Care",
         "aum": 3.14
     },
     {
@@ -2005,13 +2005,13 @@
         "aum": 1.54
     },
     {
-        "ticker": "PYPU",
-        "display_name": "Direxion Daily PYPL Bull 2X Shares",
+        "ticker": "SDP",
+        "display_name": "ProShares UltraShort Utilities",
         "aum": 1.5
     },
     {
-        "ticker": "SDP",
-        "display_name": "ProShares UltraShort Utilities",
+        "ticker": "PYPU",
+        "display_name": "Direxion Daily PYPL Bull 2X Shares",
         "aum": 1.5
     },
     {
@@ -2065,93 +2065,8 @@
         "aum": 0.48
     },
     {
-        "ticker": "DOGD",
-        "display_name": "DOGD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "MSDD",
-        "display_name": "MSDD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "VOYX",
-        "display_name": "VOYX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "BOED",
-        "display_name": "BOED",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ELIS",
-        "display_name": "ELIS",
-        "aum": 0.0
-    },
-    {
-        "ticker": "HOOZ",
-        "display_name": "Defiance Daily Target 2X Short HOOD ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "NNEX",
-        "display_name": "NNEX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ENPX",
-        "display_name": "ENPX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "CLSZ",
-        "display_name": "CLSZ",
-        "aum": 0.0
-    },
-    {
-        "ticker": "MPL",
-        "display_name": "Defiance Daily Target 2X Long MP ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "MDBX",
-        "display_name": "MDBX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "SMQ",
-        "display_name": "SMQ",
-        "aum": 0.0
-    },
-    {
-        "ticker": "LMBO",
-        "display_name": "LMBO",
-        "aum": 0.0
-    },
-    {
-        "ticker": "BULX",
-        "display_name": "BULX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ZETX",
-        "display_name": "Defiance Daily Target 2X Long ZETA ETF",
-        "aum": 0.0
-    },
-    {
-        "ticker": "LMTS",
-        "display_name": "LMTS",
-        "aum": 0.0
-    },
-    {
-        "ticker": "LCDL",
-        "display_name": "LCDL",
-        "aum": 0.0
-    },
-    {
-        "ticker": "COHX",
-        "display_name": "Tradr 2X Long COHR Daily ETF",
+        "ticker": "XRPK",
+        "display_name": "XRPK",
         "aum": 0.0
     },
     {
@@ -2160,48 +2075,8 @@
         "aum": 0.0
     },
     {
-        "ticker": "BRKD",
-        "display_name": "BRKD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "PAAU",
-        "display_name": "PAAU",
-        "aum": 0.0
-    },
-    {
-        "ticker": "BU",
-        "display_name": "BU",
-        "aum": 0.0
-    },
-    {
-        "ticker": "SNPX",
-        "display_name": "SNPX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "CVNX",
-        "display_name": "CVNX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "HLXX",
-        "display_name": "HLXX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "SRPU",
-        "display_name": "SRPU",
-        "aum": 0.0
-    },
-    {
-        "ticker": "FRDD",
-        "display_name": "FRDD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ETRL",
-        "display_name": "ETRL",
+        "ticker": "SMQ",
+        "display_name": "SMQ",
         "aum": 0.0
     },
     {
@@ -2210,13 +2085,18 @@
         "aum": 0.0
     },
     {
-        "ticker": "SOLX",
-        "display_name": "SOLX",
+        "ticker": "ABNG",
+        "display_name": "ABNG",
         "aum": 0.0
     },
     {
-        "ticker": "REKT",
-        "display_name": "REKT",
+        "ticker": "ZETX",
+        "display_name": "Defiance Daily Target 2X Long ZETA ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "FRDD",
+        "display_name": "FRDD",
         "aum": 0.0
     },
     {
@@ -2225,8 +2105,13 @@
         "aum": 0.0
     },
     {
-        "ticker": "ABNG",
-        "display_name": "ABNG",
+        "ticker": "SRPU",
+        "display_name": "SRPU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "BRKD",
+        "display_name": "BRKD",
         "aum": 0.0
     },
     {
@@ -2235,8 +2120,123 @@
         "aum": 0.0
     },
     {
-        "ticker": "XRPK",
-        "display_name": "XRPK",
+        "ticker": "BU",
+        "display_name": "BU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "REKT",
+        "display_name": "REKT",
+        "aum": 0.0
+    },
+    {
+        "ticker": "CLSZ",
+        "display_name": "CLSZ",
+        "aum": 0.0
+    },
+    {
+        "ticker": "BOED",
+        "display_name": "BOED",
+        "aum": 0.0
+    },
+    {
+        "ticker": "PAAU",
+        "display_name": "PAAU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "LMTS",
+        "display_name": "LMTS",
+        "aum": 0.0
+    },
+    {
+        "ticker": "DOGD",
+        "display_name": "DOGD",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ETRL",
+        "display_name": "ETRL",
+        "aum": 0.0
+    },
+    {
+        "ticker": "COHX",
+        "display_name": "Tradr 2X Long COHR Daily ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "NNEX",
+        "display_name": "NNEX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "LCDL",
+        "display_name": "LCDL",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ENPX",
+        "display_name": "ENPX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "MSDD",
+        "display_name": "MSDD",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ELIS",
+        "display_name": "ELIS",
+        "aum": 0.0
+    },
+    {
+        "ticker": "SOLX",
+        "display_name": "SOLX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "SNPX",
+        "display_name": "SNPX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "HOOZ",
+        "display_name": "Defiance Daily Target 2X Short HOOD ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "MPL",
+        "display_name": "Defiance Daily Target 2X Long MP ETF",
+        "aum": 0.0
+    },
+    {
+        "ticker": "BULX",
+        "display_name": "BULX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "VOYX",
+        "display_name": "VOYX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "MDBX",
+        "display_name": "MDBX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "HLXX",
+        "display_name": "HLXX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "LMBO",
+        "display_name": "LMBO",
+        "aum": 0.0
+    },
+    {
+        "ticker": "CVNX",
+        "display_name": "CVNX",
         "aum": 0.0
     }
 ]
