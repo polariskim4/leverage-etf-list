@@ -735,13 +735,13 @@
         "aum": 56.38
     },
     {
-        "ticker": "IONL",
-        "display_name": "GraniteShares 2x Long IONQ Daily ETF",
+        "ticker": "KOLD",
+        "display_name": "ProShares UltraShort Bloomberg Natural Gas",
         "aum": 54.73
     },
     {
-        "ticker": "KOLD",
-        "display_name": "ProShares UltraShort Bloomberg Natural Gas",
+        "ticker": "IONL",
+        "display_name": "GraniteShares 2x Long IONQ Daily ETF",
         "aum": 54.73
     },
     {
@@ -1270,13 +1270,13 @@
         "aum": 16.63
     },
     {
-        "ticker": "SRS",
-        "display_name": "ProShares UltraShort Real Estate",
+        "ticker": "MSFX",
+        "display_name": "T-Rex 2X Long Microsoft Daily Target ETF",
         "aum": 16.54
     },
     {
-        "ticker": "MSFX",
-        "display_name": "T-Rex 2X Long Microsoft Daily Target ETF",
+        "ticker": "SRS",
+        "display_name": "ProShares UltraShort Real Estate",
         "aum": 16.54
     },
     {
@@ -1840,6 +1840,11 @@
         "aum": 3.64
     },
     {
+        "ticker": "CONX",
+        "display_name": "Direxion Daily COIN Bull 2X ETF",
+        "aum": 3.54
+    },
+    {
         "ticker": "TBXU",
         "display_name": "Direxion Daily Biotech Top 5 Bull 2X ETF",
         "aum": 3.54
@@ -1847,11 +1852,6 @@
     {
         "ticker": "ULE",
         "display_name": "ProShares Ultra Euro",
-        "aum": 3.54
-    },
-    {
-        "ticker": "CONX",
-        "display_name": "Direxion Daily COIN Bull 2X ETF",
         "aum": 3.54
     },
     {
@@ -2065,33 +2065,8 @@
         "aum": 0.48
     },
     {
-        "ticker": "FRDU",
-        "display_name": "FRDU",
-        "aum": 0.0
-    },
-    {
-        "ticker": "HLXX",
-        "display_name": "HLXX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ABNG",
-        "display_name": "ABNG",
-        "aum": 0.0
-    },
-    {
-        "ticker": "BULX",
-        "display_name": "BULX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "ELIS",
-        "display_name": "ELIS",
-        "aum": 0.0
-    },
-    {
-        "ticker": "NNEX",
-        "display_name": "NNEX",
+        "ticker": "COHX",
+        "display_name": "Tradr 2X Long COHR Daily ETF",
         "aum": 0.0
     },
     {
@@ -2100,93 +2075,13 @@
         "aum": 0.0
     },
     {
-        "ticker": "BOED",
-        "display_name": "BOED",
-        "aum": 0.0
-    },
-    {
-        "ticker": "FRDD",
-        "display_name": "FRDD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "MSDD",
-        "display_name": "MSDD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "VOYX",
-        "display_name": "VOYX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "REKT",
-        "display_name": "REKT",
-        "aum": 0.0
-    },
-    {
         "ticker": "LCDL",
         "display_name": "LCDL",
         "aum": 0.0
     },
     {
-        "ticker": "CVNX",
-        "display_name": "CVNX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "BRKD",
-        "display_name": "BRKD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "AXPG",
-        "display_name": "AXPG",
-        "aum": 0.0
-    },
-    {
-        "ticker": "MPL",
-        "display_name": "MPL",
-        "aum": 0.0
-    },
-    {
-        "ticker": "CLSZ",
-        "display_name": "CLSZ",
-        "aum": 0.0
-    },
-    {
-        "ticker": "SMQ",
-        "display_name": "SMQ",
-        "aum": 0.0
-    },
-    {
-        "ticker": "DOGD",
-        "display_name": "DOGD",
-        "aum": 0.0
-    },
-    {
-        "ticker": "LMTS",
-        "display_name": "LMTS",
-        "aum": 0.0
-    },
-    {
-        "ticker": "PAAU",
-        "display_name": "PAAU",
-        "aum": 0.0
-    },
-    {
-        "ticker": "LMBO",
-        "display_name": "LMBO",
-        "aum": 0.0
-    },
-    {
-        "ticker": "SOLX",
-        "display_name": "SOLX",
-        "aum": 0.0
-    },
-    {
-        "ticker": "BU",
-        "display_name": "BU",
+        "ticker": "REKT",
+        "display_name": "REKT",
         "aum": 0.0
     },
     {
@@ -2205,18 +2100,33 @@
         "aum": 0.0
     },
     {
-        "ticker": "SNPX",
-        "display_name": "SNPX",
+        "ticker": "SMQ",
+        "display_name": "SMQ",
         "aum": 0.0
     },
     {
-        "ticker": "COHX",
-        "display_name": "Tradr 2X Long COHR Daily ETF",
+        "ticker": "PAAU",
+        "display_name": "PAAU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ELIS",
+        "display_name": "ELIS",
+        "aum": 0.0
+    },
+    {
+        "ticker": "LMTS",
+        "display_name": "LMTS",
         "aum": 0.0
     },
     {
         "ticker": "XRPK",
         "display_name": "XRPK",
+        "aum": 0.0
+    },
+    {
+        "ticker": "MPL",
+        "display_name": "MPL",
         "aum": 0.0
     },
     {
@@ -2235,8 +2145,98 @@
         "aum": 0.0
     },
     {
+        "ticker": "BULX",
+        "display_name": "BULX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "CLSZ",
+        "display_name": "CLSZ",
+        "aum": 0.0
+    },
+    {
+        "ticker": "CVNX",
+        "display_name": "CVNX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "MSDD",
+        "display_name": "MSDD",
+        "aum": 0.0
+    },
+    {
         "ticker": "XOMZ",
         "display_name": "XOMZ",
+        "aum": 0.0
+    },
+    {
+        "ticker": "BOED",
+        "display_name": "BOED",
+        "aum": 0.0
+    },
+    {
+        "ticker": "DOGD",
+        "display_name": "DOGD",
+        "aum": 0.0
+    },
+    {
+        "ticker": "FRDD",
+        "display_name": "FRDD",
+        "aum": 0.0
+    },
+    {
+        "ticker": "LMBO",
+        "display_name": "LMBO",
+        "aum": 0.0
+    },
+    {
+        "ticker": "FRDU",
+        "display_name": "FRDU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "HLXX",
+        "display_name": "HLXX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "BRKD",
+        "display_name": "BRKD",
+        "aum": 0.0
+    },
+    {
+        "ticker": "VOYX",
+        "display_name": "VOYX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "BU",
+        "display_name": "BU",
+        "aum": 0.0
+    },
+    {
+        "ticker": "SNPX",
+        "display_name": "SNPX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "AXPG",
+        "display_name": "AXPG",
+        "aum": 0.0
+    },
+    {
+        "ticker": "NNEX",
+        "display_name": "NNEX",
+        "aum": 0.0
+    },
+    {
+        "ticker": "ABNG",
+        "display_name": "ABNG",
+        "aum": 0.0
+    },
+    {
+        "ticker": "SOLX",
+        "display_name": "SOLX",
         "aum": 0.0
     }
 ]
